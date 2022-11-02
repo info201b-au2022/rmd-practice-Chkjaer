@@ -1,5 +1,5 @@
 ---
-title: "index.Rmd"
+title: "index"
 output: html_document
 date: "2022-11-02"
 ---

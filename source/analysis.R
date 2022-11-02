@@ -1,7 +1,7 @@
 # A brief analysis of the NYT COVID-19 data
 
 # Load the tidyverse package
-library(tidyverse)
+library("tidyverse")
 
 # Load the *national level* data into a variable. `national`
 national <- read.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv")
@@ -29,3 +29,4 @@ get_total_deaths <- function() {
 cases_plot <- ggplot(data = national) +
   geom_line(mapping = aes(x = as.Date(date), y = cases)) +
   labs(x = "Date", y = "Cumulative Cases", title = "U.S. COVID Cases")
+
